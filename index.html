@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Architecture Design</title>
+    <meta
+      content="interior Design for modern and classic homes"
+      name="description"
+    />
+    <meta content="interior design for modern homes" name="keywords" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:ital@0;1&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--------------------- Top Bar ------------------------>
+    <section id="topbar" class="d-flex align-items-center pt-3">
+      <div
+        class="container-fluid d-flex justify-content-center justify-content-md-between"
+      >
+        <div class="topbar-text">
+          <p>Welcome to Our Interior Company .</p>
+        </div>
+        <div class="social-links d-none d-sm-block">
+          <a href="#" class="twitter me-1"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook me-1"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram me-1"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin me-1"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-------------------- Contact_Details ---------------------->
+    <section id="Contact_Details" class="d-lg-flex d-none">
+      <div class="container me-0 p-3">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <div class="detail">
+              <i class="bi bi-envelope-at me-4"></i>
+              <div class="text">
+                <h5>E-Mail</h5>
+                <p class="text-muted">info@example.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="detail">
+              <i class="bi bi-telephone-plus me-4"></i>
+              <div class="text">
+                <h5>Call Us Now</h5>
+                <p class="text-muted">(+01) 555 - 555 - 4444</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="detail">
+              <i class="bi bi-geo-alt me-4"></i>
+              <div class="text">
+                <h5>110,old Street</h5>
+                <p class="text-muted">Old Traford , England</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toggle pt-3 me-5">
+        <i class="bi bi-bar-chart-steps" id="toggle-open"></i>
+      </div>
+      <div class="site-overlay" id="site-overlay"></div>
+      <div id="Side-bar" class="text-center p-5">
+        <i class="bi bi-x-octagon" id="close"></i>
+        <div class="slide-logo">
+          <img
+            data-src="assets/img/logo.png"
+            class="w-25"
+            alt="side_bar_logo"
+          />
+          <h2 class="pt-1">D É C O R</h2>
+        </div>
+        <div>
+          <p class="text-capitalize p-1">
+            looking out for a reliable interior design.Beyond more stoic this
+            along goodness hey thiswow manatee mongoose one as since a far
+            flustered impressive
+          </p>
+          <div class="mt-1">
+            <img
+              data-src="assets/img/6.jpg"
+              alt="side_bar_image"
+              class="slide-img img-fluid"
+            />
+            <div class="row flex-column share align-items-center">
+              <a href="https://facebook.com" class="col-11 my-1 p-1"
+                ><i class="bi bi-facebook text-primary mx-2"></i>FaceBook</a
+              >
+              <a href="https://google.com" class="col-11 p-1"
+                ><i class="bi bi-google text-danger mx-2"></i>Google</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------- Home and header  Section ------------------->
+    <section
+      id="Home"
+      class="d-flex flex-column justify-content-between position-relative"
+    >
+      <header id="header" class="d-flex align-items-center">
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <a href="#Contact_Details">
+            <h1 class="logo">
+              <i class="bi bi-boxes me-1"></i><span class="py-1">D</span>écor
+            </h1></a
+          >
+
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li>
+                <a class="nav-link scrollto active" href="#Contact_Details"
+                  ><i class="bi bi-house-check-fill"></i>Home</a
+                >
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#About">
+                  <i class="bi bi-person-lines-fill"></i>About</a
+                >
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#services"
+                  ><i class="bi bi-hdd-stack"></i>Services</a
+                >
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#gallery"
+                  ><i class="bi bi-images"></i>Gallery</a
+                >
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#blog"
+                  ><i class="bi bi-blockquote-right"></i>Blog</a
+                >
+              </li>
+              <li class="dropdown">
+                <a href="#"
+                  ><i class="bi bi-chevron-down fs-3 m-auto"></i>Drop Down
+                </a>
+                <ul>
+                  <li>
+                    <a href="#Clients"
+                      ><i class="bi bi-blockquote-right"></i>Clients</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Price"
+                      ><i class="bi bi-blockquote-right"></i>Price</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#team"
+                  ><i class="bi bi-microsoft-teams"></i>Team</a
+                >
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#contact"
+                  ><i class="bi bi-telephone-fill"></i>Contact</a
+                >
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+        </div>
+      </header>
+      <span></span>
+
+      <div
+        class="container home-text justify-content-center"
+        data-aos="fade-up"
+      >
+        <img src="assets/img/logo.png" alt="home-img" class="img-fluid" />
+        <h1>Appealing Interior Design</h1>
+        <h2 class="p-1">
+          realize Your vision and make it a reality. Wanna work with us ! . . .
+        </h2>
+        <a href="#About" class="Main-Btn scrollto">Get Started</a>
+      </div>
+      <div class="home_image">
+        <img
+          src="assets/img/image2-home1.png"
+          alt="home-image"
+          class="no-lazy img-fluid"
+          data-aos="fade-down-left"
+        />
+      </div>
+    </section>
+
+    <!-------------------------  About Section  ------------------------->
+    <section class="about" id="About" loading="lazy">
+      <div class="about-layer">
+        <!--  images Slider -->
+        <div
+          class="about-slider mb-3"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div class="slider-container">
+            <div
+              class="slide active"
+              style="
+                background-image: url('./assets/img/living-room-gc9d51b791_1920.jpg');
+              "
+            >
+              <div class="info">
+                <h2>living Room</h2>
+                <p class="d-md-block d-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum.
+                </p>
+              </div>
+            </div>
+            <div
+              class="slide"
+              style="
+                background-image: url('./assets/img/bedroom-gfe45dbb27_1280.jpg');
+              "
+            >
+              <div class="info">
+                <h2>Bedroom</h2>
+                <p class="d-md-block d-none">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Amet, vero earum perspiciatis officia
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="slide"
+              style="
+                background-image: url('./assets/img/bathroom-g4a0abd2ff_1280.jpg');
+              "
+            >
+              <div class="info p-1">
+                <h2>Bathroom</h2>
+                <p class="d-md-block d-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt recusandae unde autem
+                </p>
+              </div>
+            </div>
+            <div
+              class="slide"
+              style="
+                background-image: url('./assets/img/kitchen-g931b080b8_1280.jpg');
+              "
+            >
+              <div class="info">
+                <h2>Kitchen</h2>
+                <p class="d-md-block d-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div
+              class="slide"
+              style="
+                background-image: url('./assets/img/poster-g28c8c774d_1920.jpg');
+              "
+            >
+              <div class="info">
+                <h2>Office</h2>
+                <p class="d-md-block d-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="eraser"></div>
+          <div class="buttons-container">
+            <button id="previous"><i class="bi bi-caret-left-fill"></i></button>
+            <button id="next"><i class="bi bi-caret-right-fill"></i></button>
+          </div>
+        </div>
+        <!-- End About-Slider -->
+        <div class="container-fluid">
+          <div class="row py-2 align-items-center">
+            <div
+              class="col-lg-6 col-md-12 text-sm-center text-lg-start py-1 mb-1"
+            >
+              <div class="" data-aos="fade-up">
+                <img
+                  src="./assets/img/about-image.jpg"
+                  loading="lazy"
+                  alt="about-image"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12" data-aos="zoom-in">
+              <div class="about-text py-1 my-2">
+                <div class="icon p-1">
+                  <i class="bi bi-pinterest"></i>
+                </div>
+                <h4 class="content-title py-2 text-uppercase">
+                  Interior Design
+                </h4>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne"
+                        aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne"
+                      >
+                        Focus on Design
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="panelsStayOpen-headingOne"
+                    >
+                      <div class="accordion-body">
+                        Hello, I’m A Talented Interior Designer & Architect
+                        Based In Newyork . I Create Designs Which Are
+                        Aesthetically Pleasing And Attractive .
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo"
+                      >
+                        Deliver Optimal Solution
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingTwo"
+                    >
+                      <div class="accordion-body">
+                        Beyond more stoic this along goodness hey this this wow
+                        manatee mongoose one as since a far flustered impressive
+                        manifest mongoose one as since a far flustered
+                        impressive
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2
+                      class="accordion-header"
+                      id="panelsStayOpen-headingThree"
+                    >
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree"
+                      >
+                        Seamless Integration
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingThree"
+                    >
+                      <div class="accordion-body">
+                        The basic philosophy of our studio is to create
+                        individual, aesthetically stunning solutions for our
+                        customers by lightning-fast development of projects
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#steps" class="Main-Btn scrollto py-3 my-1"
+                  >More Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------- Steps Section ------------------------->
+    <section
+      class="steps"
+      id="steps"
+      data-aos="fade-down"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+    >
+      <div class="container steps_bg">
+        <h2 class="steps_title text-center text-uppercase py-3">
+          <span> s</span>tart from <span>d</span>esign to <span>r</span>eality
+        </h2>
+
+        <div class="row">
+          <div class="steps_card col-lg-4 my-1">
+            <div class="steps_card-number">01</div>
+            <h3 class="steps_card-title text-center">Design</h3>
+            <p class="steps_card-description">
+              We have several varieties plants you can choose from.
+            </p>
+          </div>
+
+          <div class="steps_card col-lg-4 my-1">
+            <div class="steps_card-number">02</div>
+            <h3 class="steps_card-title text-center">Modeling</h3>
+            <p class="steps_card-description">
+              Once your order is set, we move to the next step which is the
+              shipping.
+            </p>
+          </div>
+
+          <div class="steps_card col-lg-4 my-1">
+            <div class="steps_card-number">03</div>
+            <h3 class="steps_card-title text-center">reality</h3>
+            <p class="steps_card-description">
+              Our delivery process is easy, you receive the plant direct to your
+              door.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------ Services Section ------------------------->
+
+    <section class="services pt-1" id="services">
+      <div class="container-fluid">
+        <div class="section-title">
+          <span>Why Us !</span>
+          <h2>Deliver What You Need</h2>
+        </div>
+        <div
+          class="row details-container position-relative py-lg-1"
+          data-aos="zoom-in"
+        >
+          <div class="left-image col-lg-4 col-md-6 col-sm-12 d-lg-block">
+            <img
+              src="./assets/img/bedrom.jpg"
+              loading="lazy"
+              class="img-fluid"
+              alt="serv-left-image"
+            />
+          </div>
+          <div class="middle-text col-lg-5 col-sm-12 pt-5">
+            <div class="name">
+              <p>Hello There!</p>
+              <h2 class="p-1">I'm your Mind</h2>
+            </div>
+            <div class="about-content">
+              <span class="Main-Btn text-white fs-5">Keep Watching</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="right-image">
+              <img
+                src="./assets/img/interior-design-gaaa57f304_1920.jpg"
+                loading="lazy"
+                alt="serv-right-image0"
+                class="img-fluid p-md-0"
+              />
+            </div>
+            <div class="right-image">
+              <img
+                src="./assets/img/wallpaperflare.com_wallpaper (10).jpg"
+                loading="lazy"
+                alt="serv-right-image1"
+                class="img-fluid mt-1"
+              />
+            </div>
+          </div>
+          <span class="Main-Btn fs-6">Design</span>
+          <span class="Main-Btn fs-6">Integration</span>
+          <span class="Main-Btn fs-6">Architectures</span>
+        </div>
+
+        <div class="container-fluid top-content">
+          <div class="row py-3 align-items-center position-relative">
+            <div class="top-content-text text-capitalize col-12 p-4">
+              <h2 class="text-center text-white">
+                <span> Comprehensive range</span> <br />
+                of interior design services
+              </h2>
+            </div>
+          </div>
+        </div>
+        <!-- Lower Content -->
+        <div class="lower-content">
+          <div class="row">
+            <div class="services-block col-lg-3 col-md-6 col-sm-12">
+              <div
+                class="inner-box"
+                data-aos="fade-right"
+                data-aos-easing="ease-in-sine"
+              >
+                <div class="flip-container">
+                  <div class="flipper">
+                    <div class="front">
+                      <div class="icon-box">
+                        <i class="bi bi-clipboard-data"></i>
+                      </div>
+                      <h3>Floor Plans</h3>
+                    </div>
+
+                    <div class="back">
+                      <div class="overlay-box">
+                        <div class="overlay-inner">
+                          <div class="content">
+                            <i class="bi bi-clipboard-data"></i>
+                            <h4>Floor Plans</h4>
+                            <div class="text">
+                              Bonvenire gubergren exv habeo facete prie utent
+                              maluisset intellegam
+                            </div>
+                            <a href="#gallery" class="mt-2 Main-Btn"
+                              >read more</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Services Block  -->
+            <div class="services-block col-lg-6 col-md-6 col-sm-12">
+              <div
+                class="inner-box"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+              >
+                <div class="flip-container">
+                  <div class="flipper">
+                    <div class="front">
+                      <div class="icon-box">
+                        <i class="bi bi-houses"></i>
+                      </div>
+                      <h3>Interior Design</h3>
+                    </div>
+                    <div class="back">
+                      <div class="overlay-box">
+                        <div class="overlay-inner">
+                          <div class="content">
+                            <i class="bi bi-houses"></i>
+                            <h4>Interior Design</h4>
+                            <div class="text">
+                              Bonvenire gubergren exv habeo facete prie utent
+                              maluisset intellegam vixm vim prompta facilisi
+                              inter kesy set tean denique praesent proe ipsu.
+                            </div>
+                            <a href="#gallery" class="mt-2 Main-Btn"
+                              >read more</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Services Block  -->
+            <div class="services-block col-lg-3 col-md-6 col-sm-12">
+              <div class="inner-box" data-aos="fade-left">
+                <div class="flip-container">
+                  <div class="flipper">
+                    <div class="front">
+                      <div class="icon-box">
+                        <i class="bi bi-buildings"></i>
+                      </div>
+                      <h3>Architectures</h3>
+                    </div>
+                    <div class="back">
+                      <div class="overlay-box">
+                        <div class="overlay-inner">
+                          <div class="content">
+                            <i class="bi bi-buildings"></i>
+                            <h4>Architectures</h4>
+                            <div class="text">
+                              Bonvenire gubergren exv habeo facete prie utent
+                              maluisset intellegam
+                            </div>
+                            <a href="#gallery" class="mt-2 Main-Btn"
+                              >read more</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Services Block  -->
+            <div class="services-block col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="inner-box"
+                data-aos="fade-right"
+                data-aos-duration="500"
+              >
+                <div class="flip-container">
+                  <div class="flipper">
+                    <div class="front">
+                      <div class="icon-box">
+                        <i class="bi bi-house-gear"></i>
+                      </div>
+                      <h3>Home Decoration</h3>
+                    </div>
+                    <div class="back">
+                      <div class="overlay-box">
+                        <div class="overlay-inner">
+                          <div class="content">
+                            <i class="bi bi-house-gear"></i>
+                            <h4>Home Decoration</h4>
+                            <div class="text">
+                              Bonvenire gubergren exv habeo facete prie utent
+                              maluisset intellegam vixm vim prompta
+                            </div>
+                            <a href="#gallery" class="mt-4 Main-Btn"
+                              >read more</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Services Block  -->
+            <div class="services-block col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="inner-box"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+              >
+                <div class="flip-container">
+                  <div class="flipper">
+                    <div class="front">
+                      <div class="icon-box">
+                        <i class="bi bi-rulers"></i>
+                      </div>
+                      <h3>Landscapes</h3>
+                    </div>
+                    <div class="back">
+                      <div class="overlay-box">
+                        <div class="overlay-inner">
+                          <div class="content">
+                            <i class="bi bi-rulers"></i>
+                            <h4>Landscapes</h4>
+                            <div class="text">
+                              Bonvenire gubergren exv habeo facete prie utent
+                              maluisset intellegam vixm
+                            </div>
+                            <a href="#gallery" class="mt-4 Main-Btn"
+                              >read more</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Services Block  -->
+            <div class="services-block col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="inner-box"
+                data-aos="fade-left"
+                data-aos-duration="500"
+              >
+                <div class="flip-container">
+                  <div class="flipper">
+                    <div class="front">
+                      <div class="icon-box">
+                        <i class="bi bi-moisture"></i>
+                      </div>
+                      <h3>Lighting Styles</h3>
+                    </div>
+                    <div class="back">
+                      <div class="overlay-box">
+                        <div class="overlay-inner">
+                          <div class="content">
+                            <i class="bi bi-moisture"></i>
+                            <h4>Lighting Styles</h4>
+                            <div class="text">
+                              Bonvenire gubergren exv habeo facete prie utent
+                              maluisset intellegam vixm vim pro.
+                            </div>
+                            <a href="#gallery" class="mt-4 Main-Btn"
+                              >read more</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------- Images Gallery  -------------------->
+    <section class="gallery" id="gallery">
+      <div class="row g-0">
+        <div class="col-lg-6 col-md-12">
+          <div class="image position-relative">
+            <img
+              src="./assets/img/catg-1.jpg"
+              loading="lazy"
+              alt="gallery-one"
+              class="w-100"
+            />
+            <div class="img-layer text-white position-absolute py-3">
+              <h4>Stylish Family Appartment</h4>
+              <p>INTERIOR <i class="bi bi-plus-square-dotted"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="image position-relative">
+            <img
+              loading="lazy"
+              src="./assets/img/212.jpg"
+              alt="gallery-two"
+              class="w-100"
+            />
+            <div class="img-layer text-white position-absolute">
+              <h4>Art Family Residence</h4>
+              <p>ARCHITECTURE <i class="bi bi-plus-square-dotted"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="image position-relative">
+            <img
+              src="./assets/img/living-room-gbc8db52e3_1280.jpg"
+              loading="lazy"
+              alt="gallery-three"
+              class="w-100"
+            />
+            <div class="img-layer text-white position-absolute">
+              <h4>Minimal Guests House</h4>
+              <p>DECOR INTERIOR <i class="bi bi-plus-square-dotted"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="image position-relative">
+            <img
+              loading="lazy"
+              src="./assets/img/living-room-gc9d51b791_1920.jpg"
+              alt="gallery-four"
+              class="w-100"
+            />
+            <div class="img-layer text-white position-absolute py-3">
+              <h4>Stylish Family Appartment</h4>
+              <p>INTERIOR <i class="bi bi-plus-square-dotted"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="image position-relative">
+            <img
+              loading="lazy"
+              src="./assets/img/bathroom-g4a0abd2ff_1280.jpg"
+              alt="gallery-five"
+              class="w-100"
+            />
+            <div class="img-layer text-white position-absolute">
+              <h4>Minimal Guests House</h4>
+              <p>DECOR || INTERIOR <i class="bi bi-plus-square-dotted"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="image position-relative">
+            <img
+              loading="lazy"
+              src="./assets/img/kitchen-g931b080b8_1280.jpg"
+              alt="gallery-six"
+              class="w-100"
+            />
+            <div class="img-layer text-white position-absolute">
+              <h4>Modern Decorations</h4>
+              <p>FURNITURE <i class="bi bi-plus-square-dotted"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="image position-relative">
+            <img
+              loading="lazy"
+              src="./assets/img/interior-g68417c4d8_1920.jpg"
+              alt="gallery-seven"
+              class="w-100"
+            />
+            <div class="img-layer text-white position-absolute">
+              <h4>Modern Villa in Belgium</h4>
+              <p>
+                FURNITURE || INTERIOR <i class="bi bi-plus-square-dotted"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container touch p-5">
+          <div
+            class="row align-items-center text-sm-center text-lg-start py-2"
+            data-aos="zoom-in"
+          >
+            <div class="col-lg-9">
+              <h4 class="text-uppercase">
+                Get Incredible Interior Design Right Now !
+              </h4>
+              <p class="text-capitalize">
+                At every stage, we could supervise your project – controlling
+                all the details and consulting the builders.
+              </p>
+            </div>
+            <div class="col-lg-3">
+              <a class="Main-Btn fs-6" href="#">GET IN TOUCH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------- start blog section --------------------->
+    <section class="blog py-5" id="blog">
+      <div class="container">
+        <div class="blog-text row align-items-center justify-content-between">
+          <div class="col-lg-4 d-sm-none d-lg-block">
+            <img
+              loading="lazy"
+              src="assets/img/5.jpg"
+              alt="author-blog-top"
+              class="ms-5"
+            />
+          </div>
+          <div class="col-lg-8 col-md-12">
+            <blockquote class="text-center p-3">
+              <i class="bi bi-chat-left-quote px-2 text-success"></i> Even if
+              you don’t have a ready sketch of what you want – we will help you
+              to get the result you dreamed of..<i
+                class="bi bi-chat-right-quote text-success px-2"
+              ></i>
+            </blockquote>
+            <div class="social-links">
+              <a href="#blog" class="p-1"><i class="bi bi-facebook"></i> </a>
+              <a href="#blog" class="p-1"><i class="bi bi-github"></i> </a>
+              <a href="#blog" class="p-1"> <i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right">
+          <div class="text-small mt-4">
+            <small>
+              <a href="#blog" class="mx-1">INTERIOR</a> ||
+              <a href="#blog" class="mx-1">DECOR</a>
+            </small>
+          </div>
+          <h2>The Best Way To Décor</h2>
+          <p class="text-middle my-2 p-2" style="line-height: 1.8">
+            Manufacturing firm specializing in Middle-Eastern decorative panels
+            for exterior and interior spaces. Clients include Resorts, Dubai
+            Expo 2020, Hotels, Villas and more. Our new CNC Custom Metal Home
+            décor product lines are inspired by the beauty of the Arabic
+            Geometric Shapes and are all custom designed by you. Our products
+            have timeless elegance
+          </p>
+
+          <div
+            class="author-details my-3 d-flex align-items-center justify-content-between"
+          >
+            <div class="author d-flex align-items-center">
+              <img
+                loading="lazy"
+                src="./assets/img/author.jpg"
+                class="img-fluid rounded-4"
+                alt="author-blog-middle"
+              />
+              <small class="text-small m-3">
+                <a href="#blog" class="d-block">Ahmad Sultani</a>
+                <span>Aug 18</span>
+              </small>
+            </div>
+            <div class="social-links">
+              <a href="#blog" class="p-1"><i class="bi bi-facebook"></i> </a>
+              <a href="#blog" class="p-1"><i class="bi bi-github"></i> </a>
+              <a href="#blog" class="p-1"> <i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="container blog-image mb-5" data-aos="zoom-in-down">
+          <div class="col-sm-12">
+            <div class="bg2" id="bg2">
+              <div class="bg1" id="bg1">
+                <div class="bg" id="bg">
+                  <div class="bg-text text-light ps-3">
+                    <div class="higt-text p-4">
+                      <h3>Simplicity Is The Ultimate Sophistication</h3>
+                      <p>
+                        Some People Look For A Beautiful Place Others Make a
+                        Place Beautifu , An empty room is a story waiting to
+                        happen
+                      </p>
+                    </div>
+                    <a class="text-light" href="#bg1"
+                      ><i class="bi bi-arrow-right-square-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-text text-light ps-3">
+                  <div class="higt-text p-4">
+                    <h3>No pattern should be without some sort of meaning "</h3>
+                    <p>
+                      Serious is a word that must be entirely avoided when it
+                      comes to decoration and Your home should reflect your soul
+                    </p>
+                  </div>
+                  <a class="text-light" href="#bg2"
+                    ><i class="bi bi-arrow-right-square-fill"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-text text-light ps-3">
+                <div class="higt-text p-4">
+                  <h3>Design is not just what it looks like "</h3>
+                  <p>
+                    make everything around me beautiful, that will be my life
+                    and Luxury is when it seems flawless
+                  </p>
+                </div>
+                <a class="text-light" href="#conbg"
+                  ><i class="bi bi-arrow-right-square-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-text mx-auto p-4" data-aos="fade-left">
+          <div class="text-small mt-4">
+            <small>
+              <a href="#blog" class="mx-1">INTERIOR</a> ||
+              <a href="#blog" class="mx-1">DECOR</a>
+            </small>
+          </div>
+          <h2 class="font-weight-bold text-capitalize">
+            Your home should reflect your soul
+          </h2>
+          <p class="text-middle my-2" style="line-height: 1.8">
+            Design and manufacturing firm specializing in Middle-Eastern
+            decorative panels for exterior and interior spaces. Clients include
+            Resorts, Dubai Expo 2020, Hotels, Villas and more. Our new CNC
+            Custom Metal Home décor product lines are inspired by the beauty of
+            the Arabic Geometric Shapes and are all custom designed by you. Our
+            products have timeless elegance, exceptional craftsmanship,
+            sustainability and are ONE OF A KIND
+          </p>
+
+          <div
+            class="author-details my-3 d-flex align-items-center justify-content-between"
+          >
+            <div class="social-links">
+              <a href="#blog" class="p-1"><i class="bi bi-facebook"></i> </a>
+              <a href="#blog" class="p-1"><i class="bi bi-github"></i> </a>
+              <a href="#blog" class="p-1"> <i class="bi bi-twitter"></i></a>
+            </div>
+            <div class="author d-flex align-items-center">
+              <small class="text-small m-3">
+                <a href="#blog" class="d-block">Ahmad Sultani</a>
+                <span>Aug 18</span>
+              </small>
+              <img
+                loading="lazy"
+                src="./assets/img/author1.jpg"
+                class="img-fluid rounded-4"
+                alt="author-blog-bottom"
+              />
+            </div>
+          </div>
+
+          <blockquote class="p-3 font-italic">
+            “If you want a golden rule that will fit everything, this is it:
+            Have nothing in your houses that you do not know to be useful or
+            believe to be beautiful.”
+          </blockquote>
+
+          <br />
+
+          <div class="my-3">
+            <small>
+              <a href="#blog" class="text-primary">#DESGIN</a>,
+              <a href="#blog" class="text-primary">#INTERIOR</a>,
+              <a href="#blog" class="text-primary">#ARCTIECTURE</a>,
+              <a href="#blog" class="text-primary">#STYLES</a>,
+            </small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- Our clients   ------------------->
+    <section
+      id="Clients"
+      class="client d-flex align-items-center"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 text-center">
+            <div class="sec-title text-uppercase">
+              <span class="top-title">CORPORATION</span>
+              <h1>OUR CLIENTS &amp; <span>PARTNERS</span></h1>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12">
+            <div
+              class="clients-logo d-flex flex-column flex-sm-row justify-content-between"
+            >
+              <div>
+                <img
+                  loading="lazy"
+                  src="./assets/img/clients-5.png"
+                  alt="clients-5"
+                />
+                <img
+                  loading="lazy"
+                  src="./assets/img/clients-4.png"
+                  alt="clients-4"
+                />
+              </div>
+              <div>
+                <img
+                  loading="lazy"
+                  src="./assets/img/clients-6.png"
+                  alt="clients-6"
+                /><img
+                  loading="lazy"
+                  src="./assets/img/clients-2.png"
+                  alt="clients-2 "
+                />
+              </div>
+              <div>
+                <img
+                  loading="lazy"
+                  src="./assets/img/clients-3.png"
+                  alt="clients-3 "
+                /><img
+                  loading="lazy"
+                  src="./assets/img/clients-1.png"
+                  alt="clients-1 "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------- Pricing Section ----------------------->
+    <section
+      id="Price"
+      class="Price"
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="plan-box col-lg-4">
+            <h2 class="plan-name">Personal</h2>
+            <div class="plan-price">
+              <strong>Free</strong>
+            </div>
+            <ul class="plan-details">
+              <li>1 sub-domain</li>
+              <li><strong>10</strong> email addresses</li>
+              <li><strong>Unlimited</strong> Bandwidth</li>
+              <li><strong>20GB</strong> Storage</li>
+              <li>Support Ads</li>
+              <li>Shared Hosting</li>
+              <li><strong>24/7</strong> Customer Support</li>
+            </ul>
+
+            <div class="element-hidden more-options">
+              <p class="text-uppercase fs-5">
+                <i class="bi bi-emoji-smile fs-4 p-1 text-primary"></i>Have
+                limited Options
+              </p>
+            </div>
+            <a class="Main-Btn" href="#">Choose</a>
+          </div>
+
+          <div class="plan-box col-lg-4">
+            <h2 class="plan-name">Premium</h2>
+            <div class="plan-price"><strong>$19</strong>/mo</div>
+            <ul class="plan-details">
+              <li><strong>FREE</strong> custom domain</li>
+              <li><strong>Unlimited</strong> email addresses</li>
+              <li><strong>Unlimited</strong> Bandwidth</li>
+              <li><strong>100GB</strong> Storage</li>
+              <li><strong>No Support Ads</strong></li>
+              <li><strong>24/7</strong> Customer Support</li>
+            </ul>
+
+            <div class="element-hidden more-options">
+              <p class="text-uppercase fs-5">
+                <i class="bi bi-emoji-laughing fs-4 p-1 text-primary"></i>Enjoy
+                a better experience
+              </p>
+            </div>
+
+            <a class="Main-Btn" href="#">Choose</a>
+          </div>
+
+          <div class="plan-box col-lg-4">
+            <h2 class="plan-name">Pro</h2>
+            <div class="plan-price"><strong>$50</strong>/mo</div>
+            <ul class="plan-details">
+              <li><strong>FREE</strong> custom domain</li>
+              <li><strong>Unlimited</strong> email addresses</li>
+              <li><strong>Unlimited</strong> Bandwidth</li>
+              <li><strong>200GB</strong> Storage</li>
+              <li><strong>No Support Ads</strong></li>
+              <li><strong>Quick Install</strong> Apps (WordPress, etc)</li>
+              <li><strong>VPS Hosting</strong></li>
+              <li><strong>24/7</strong> Customer Support</li>
+            </ul>
+
+            <div class="element-hidden more-options">
+              <p class="text-uppercase fs-5">
+                <i class="bi bi-emoji-sunglasses fs-4 p-1 text-primary"></i>
+                unlimited options
+              </p>
+            </div>
+            <a class="Main-Btn" href="#">Choose</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------  Team Section  ----------------------->
+    <section id="team" class="team" data-aos="fade-down">
+      <div class="container">
+        <div class="section-title p-0">
+          <span class="fs-1 text-muted">Team</span>
+          <h2>Expert Team Members</h2>
+        </div>
+        <div class="row">
+          <ul class="list-members d-flex flex-wrap">
+            <li class="member">
+              <div class="member-image">
+                <img
+                  loading="lazy"
+                  src="./assets/img/author1.jpg"
+                  alt="team-1"
+                />
+              </div>
+              <div class="member-info">
+                <h3>Hazel Andrea</h3>
+                <p>Founder & CEO</p>
+                <div class="social-link">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-linkedin"></i>
+                </div>
+              </div>
+            </li>
+            <li class="member">
+              <div class="member-image">
+                <img loading="lazy" src="./assets/img/5.jpg" alt="team-2" />
+              </div>
+              <div class="member-info">
+                <h3>Ella Piper</h3>
+                <p>Product Manager</p>
+                <div class="social-link">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-linkedin"></i>
+                </div>
+              </div>
+            </li>
+            <li class="member">
+              <div class="member-image">
+                <img
+                  loading="lazy"
+                  src="./assets/img/author-4.jpg"
+                  alt="team-3"
+                />
+              </div>
+              <div class="member-info">
+                <h3>Lucas Edward</h3>
+                <p>Marketing Head</p>
+                <div class="social-link">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-linkedin"></i>
+                </div>
+              </div>
+            </li>
+            <li class="member">
+              <div class="member-image">
+                <img
+                  loading="lazy"
+                  src="./assets/img/author.jpg"
+                  alt="team-4"
+                />
+              </div>
+              <div class="member-info">
+                <h3>Jaxon Mathew</h3>
+                <p>Affiliate Manager</p>
+                <div class="social-link">
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-linkedin"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!---------------- Contact Section --------------------->
+    <section id="contact" class="contact p-0">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box mb-4">
+              <i class="bi bi-envelope-at"></i>
+              <h3>Email Us</h3>
+              <p>contact@example.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box mb-4">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6">
+            <iframe
+              class="mb-4 mb-lg-0"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+              loading="lazy"
+              frameborder="0"
+              style="border: 0; width: 100%; height: 384px"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form class="form-data">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group mt-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="5"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="text-center mt-1">
+                <button type="submit" class="Main-Btn fs-5">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------ Footer -------------------->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-info">
+                <h3>D É C O R</h3>
+                <p>
+                  110,old Street <br />
+                  Old Traford , England<br /><br />
+                  <strong>Phone:</strong> (+01) 555 - 555 - 4444<br />
+                  <strong>Email:</strong> info@example.com<br />
+                </p>
+                <div class="social-links mt-3">
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-github"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-linkedin"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links pt-3">
+              <h4 class="pb-1">Useful Links</h4>
+              <ul>
+                <li><i class="bi bi-chevron-double-right"></i>Home</li>
+                <li><i class="bi bi-chevron-double-right"></i>About us</li>
+                <li><i class="bi bi-chevron-double-right"></i>Services</li>
+                <li>
+                  <i class="bi bi-chevron-double-right"></i>Terms of service
+                </li>
+                <li>
+                  <i class="bi bi-chevron-double-right"></i>Privacy policy
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links pt-3">
+              <h4 class="pb-1">Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-double-right"></i>
+                  interior Design
+                </li>
+                <li>
+                  <i class="bi bi-chevron-double-right"></i>
+                  Architecture Development
+                </li>
+
+                <li>
+                  <i class="bi bi-chevron-double-right"></i>
+                  Home Management
+                </li>
+                <li>
+                  <i class="bi bi-chevron-double-right"></i>
+                  Marketing
+                </li>
+                <li>
+                  <i class="bi bi-chevron-double-right"></i>
+                  3D Design
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter pt-3">
+              <h4 class="pb-1">Our Newsletter</h4>
+              <p>
+                Don’t miss to subscribe to our new feeds, kindly fill the form
+                below
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>D É C O R</span></strong
+          >. All Rights Reserved ..
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
