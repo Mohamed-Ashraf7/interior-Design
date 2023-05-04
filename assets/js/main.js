@@ -22,11 +22,6 @@ let Side_bar = select("#Side-bar"),
     (Side_bar.style.cssText = "right:-620px;"),
       (site_overlay.style.display = "none");
   });
-let Home_ = document.getElementById("Home");
-window.onscroll = () => {
-  let e = document.documentElement.scrollTop;
-  Home_.style.backgroundPositionY = 0.7 * e + "px";
-};
 const slides = document.querySelectorAll(".slider-container .slide"),
   eraser = document.querySelector(".eraser"),
   prev = document.getElementById("previous"),
